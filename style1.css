@@ -515,3 +515,61 @@ footer{
 .footer .credits span{
     color: var(--main-color);
 }
+/* tablets and small laptops */
+@media(max-width:975px){
+   html{
+    font-size: 53%;
+   }
+   .header .logo img{
+    height: 9rem;
+}
+}
+/* small devices(tablets) */
+@media(max-width:768px){
+
+    section{
+        padding:2rem ;
+    }
+    .home{
+        background-position: left;
+    }
+    .home .hero h3{
+        font-size: 4.3rem;
+    }
+    .home .hero p{
+        font-size: 1.5rem;
+    }
+    .header .icons .menu-icon{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        background-color: var(--bg-color);
+        height: 70vh;
+    }
+    .header .navbar.active{
+        right:0;
+    }
+    .header .navbar a{
+        color: var(--main-color);
+        display: block;
+        font-size: 2rem;
+        padding: .5rem;
+        margin: 1.3rem;
+    }
+    .header .search-form{
+           width: 92%;
+    }
+    .header .search-form.active{
+        right: 4%;   
+    }
+}
+
+/* smart phone */
+@media(max-width:425px){
+html{
+    font-size: 40%;
+}
